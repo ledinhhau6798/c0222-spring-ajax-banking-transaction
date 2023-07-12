@@ -1,0 +1,43 @@
+<th:block th:fragment="modalDeposit">
+    <div class="modal fade " id="modalDeposit" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5">Modal Deposit customer</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+               <div class="error-area hide"></div>
+                <form method="post" id="frmDeposit">
+                    <div class="row mb-3">
+                        <div class="col-lg-6">
+                            <label class="fw-bold">Full Name</label>
+                            <input type="text" class="form-control" id="fullNameDep" name="fullNameDep" readonly>
+                        </div>
+                        <div class="col-lg-6">
+                            <label class="fw-bold">Email</label>
+                            <input type="email" class="form-control" id="emailDep" name="emailDep" readonly>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-lg-6">
+                            <label class="fw-bold">Transaction Amount</label>
+                            <input type="number" class="form-control" id="transactionAmountDep" name="transactionAmountDep">
+                        </div>
+                        <div class="col-lg-6">
+                            <label class="fw-bold">Balance</label>
+                            <input type="text" class="form-control" id="balanceDep" name="balanceDep" readonly>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" id="btnDeposit" class="btn btn-primary">Deposit</button>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</th:block>
